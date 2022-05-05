@@ -1,0 +1,24 @@
+.btn-style{
+ color:gray;
+ background-color:rgb(143, 233, 143);
+ padding: 4px 10px;
+ margin:5px 0;
+ border:none;
+ transition: all 1.ms;
+}
+.btn-style:hover{
+  background-color: rgb(43, 171, 43);
+  color: aliceblue;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+.single-btn{
+ padding-left: 2.2rem;
+}
+
+@media only screen and (max-width: 400px) {
+ .single-btn{
+  padding-left: 6rem;
+ }   
+}
+ 
