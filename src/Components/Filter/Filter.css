@@ -13,12 +13,7 @@
   cursor: pointer;
 }
 .single-btn{
- padding-left: 2.2rem;
+ padding-left: .9rem;
 }
 
-@media only screen and (max-width: 400px) {
- .single-btn{
-  padding-left: 6rem;
- }   
-}
  

@@ -1,12 +1,12 @@
 import React,{useState} from 'react';
 import "./Filter.css";
 
-const Filter=({filterItem})=>{
+const Filter=({filterItem,launchItem,landingItem})=>{
   // console.log(data);
   
 return(
 <>
- <div style={{marginBottom:'10px'}}>
+ <div>
  <h3>Filters</h3>
   <h4 style={{textAlign:'center'}}>Launch Year</h4>
   <hr />
@@ -50,16 +50,17 @@ return(
    <h4 style={{textAlign:'center'}}>Successful Launch</h4>
    <hr />
  <div style={{display:'flex',justifyContent:'space-evenly'}}>
- <button className="btn-style">True</button>     
- <button className="btn-style">False</button>     
+ <button onClick={()=>launchItem(true)}
+  className="btn-style">True</button>     
+ <button onClick={()=>launchItem(false)}        className="btn-style">False</button>     
  </div>
  </div>
  <div>
    <h4 style={{textAlign:'center'}}>Successful Landing</h4>
    <hr />
  <div style={{display:'flex',justifyContent:'space-evenly'}}>
- <button className="btn-style">True</button>     
- <button className="btn-style">False</button>     
+ <button onClick={()=>landingItem(true)} className="btn-style">True</button>     
+ <button onClick={()=>landingItem(false)} className="btn-style">False</button>     
  </div>
  </div>
   

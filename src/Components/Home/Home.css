@@ -1,0 +1,44 @@
+
+.display-grid{
+ display: grid;
+ grid-template-columns:auto auto;
+ width: fit-content;
+}
+.first-div{
+ background-color: #fff;
+  margin: 10px;
+}
+.second-div{
+ width: 100%;
+ margin: 0 10px;
+}
+.map-div{
+ display: grid;
+ grid-template-columns: auto auto auto auto;
+}
+
+@media only screen and (max-width: 600px){
+        .display-grid{
+                display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 flex-direction: column;
+               
+        }
+        .map-div{
+                display: grid;
+                grid-template-columns: auto;
+                 
+               }
+
+               .first-div{
+                 
+                margin-left: 55px;
+                 
+               }
+               .second-div{
+                 margin: 0;
+                margin-left: 55px;             
+               }
+}
+ 
