@@ -15,5 +15,10 @@
 .single-btn{
  padding-left: .9rem;
 }
+ @media(max-width:400px){
+   .single-btn{
+     padding-left: 5.6rem;
+   }
+ }
 
  

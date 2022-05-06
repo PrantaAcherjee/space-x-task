@@ -1,4 +1,15 @@
 .card-div{
  background-color:#fff;
   margin:10px;
+  padding: 20px;
+}
+ 
+.image{
+  background-color: whitesmoke;
+}
+
+.content-div{
+  padding: .5rem;
+  font-size: 15px;
+  font-weight: 500;
 }

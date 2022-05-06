@@ -7,8 +7,8 @@ const Filter=({filterItem,launchItem,landingItem})=>{
 return(
 <>
  <div>
- <h3>Filters</h3>
-  <h4 style={{textAlign:'center'}}>Launch Year</h4>
+ <h3 style={{padding:'5px'}}>Filters</h3>
+  <h5 style={{textAlign:'center',margin:'8px 5px'}}>Launch Year</h5>
   <hr />
  </div>
  {/* buttons */}
@@ -47,7 +47,7 @@ return(
  <button onClick={()=>filterItem("2020")} className="btn-style">2020</button>                 
  </div>
  <div>
-   <h4 style={{textAlign:'center'}}>Successful Launch</h4>
+   <h5 style={{textAlign:'center',margin:'8px 5px'}}>Successful Launch</h5>
    <hr />
  <div style={{display:'flex',justifyContent:'space-evenly'}}>
  <button onClick={()=>launchItem(true)}
@@ -56,7 +56,7 @@ return(
  </div>
  </div>
  <div>
-   <h4 style={{textAlign:'center'}}>Successful Landing</h4>
+   <h5 style={{textAlign:'center',margin:'8px 5px'}}>Successful Landing</h5>
    <hr />
  <div style={{display:'flex',justifyContent:'space-evenly'}}>
  <button onClick={()=>landingItem(true)} className="btn-style">True</button>     

@@ -5,8 +5,10 @@ const Card = ({data}) => {
   return (
     <>   
     <div className="card-div">
-        <img style={{height:'80%',width:'80%',padding:'10px'}} src={data.links.mission_patch_small} alt={data.mission_name} />
-        <div style={{padding:'12px'}}>
+        <div className="image">
+        <img style={{height:'80%',width:'80%'}} src={data.links.mission_patch_small} alt={data.mission_name} />
+        </div>
+        <div className='content-div'>
         <p>Mission Ids: {data.mission_id[0]}</p>
         <p>Launch Year: {data.launch_year}</p>
         <p>Successful Launch: {data.launch_success}</p>
